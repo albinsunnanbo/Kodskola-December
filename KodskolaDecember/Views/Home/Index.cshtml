@@ -3,8 +3,24 @@
 }
 @section scripts {
     <script src="~/Scripts/examples/example-1.js"></script>
+    <script src="~/Scripts/examples/foreach-example.js"></script>
 }
 <div class="jumbotron">
     <h1>Kodskola</h1>
     <p class="lead">December 2014</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Exempel</h3>
+            <p>
+                <input type="button" id="foreach-example-setup" value="Foreach setup" />
+                <input type="button" id="foreach-example-execute" value="Foreach execute" />
+            </p>
+        </div>
+        <div class="col-md-8">
+            <h3>Output</h3>
+            <div id="output" />
+        </div>
+    </div>
 </div>
