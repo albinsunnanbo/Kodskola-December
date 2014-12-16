@@ -19,7 +19,7 @@ namespace KodskolaDecember.Controllers
         {
             using (var context = new KodskolaContext())
             {
-                var model = context.Orders.ToList();
+                var model = context.Orders.Include(o => o.Rows).ToList();
                 return View(model);
             }
         }
