@@ -23,5 +23,14 @@ namespace KodskolaDecember.Controllers
                 return View(model);
             }
         }
+
+        public ActionResult ExampleAjax()
+        {
+            return Json(new
+            {
+                foo = "foo",
+                bar = "long bar text",
+            }, JsonRequestBehavior.AllowGet);
+        }
     }
 }
