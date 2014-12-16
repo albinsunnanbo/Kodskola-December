@@ -142,6 +142,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\examples\closure-example.js" />
     <Content Include="Scripts\examples\ajax-example.js" />
     <Content Include="Scripts\examples\example-1.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
