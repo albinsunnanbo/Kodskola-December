@@ -1,0 +1,6 @@
+﻿@model IEnumerable<KodskolaDecember.Entities.Order>
+<h1>Order value per customer</h1>
+@foreach (var order in Model)
+{
+    <p>@order.CustomerName: @order.Rows.Sum(r => r.Price):-</p>
+}
