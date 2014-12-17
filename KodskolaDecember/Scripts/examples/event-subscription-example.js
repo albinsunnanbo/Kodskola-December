@@ -6,13 +6,13 @@
 
         // Only on already loaded controls
         $(".subscription-button").click(function () {
-            $("#event-output").append("<p style='margin:0px;'>Direct: " + $(this).val() + "</p>");
+            $("#event-output").append("<p style='margin:0px;'>button.click(): " + $(this).val() + "</p>");
         });
 
         // Persistent, even after loading new controls
         // Watchout when clicking event - subscription again
         $("body").on("click", ".subscription-button", function () {
-            $("#event-output").append("<p style='margin:0px;'>Body: " + $(this).val() + "</p>");
+            $("#event-output").append("<p style='margin:0px;'>body.on('click'): " + $(this).val() + "</p>");
         });
 
         var button2 = $("<input type='button' class='subscription-button' value='Button 2' />");
